@@ -1,15 +1,37 @@
 import funciones
 
-celcius=funciones.que_temperatura_es_en_celcius(32)  #función agarra 30, lo lleva a principal, hace el cálculo y vuelve el resultado acá
-print(f"La temperatura en celcius es:   {celcius}")
+def menu ():
+    print(" --------------------------------------MENU--------------------------------------")
+    print("1. Número entero mayor a diez")
+    print("2. Suma de tres números ")
+    print("3. División de cuadrados")
+    print("4. Convertir tempratura de Farenheit a Celcius")
+    print("----------------------------------------------------------------------------------")
 
-temp=funciones.que_temperatura_es()
-print(f"La temperatura es: {temp}")
+opcioningresada=int(input("Ingrese el número de actividad que quiera realizar: "))
 
-resultado=funciones.division_de_cuadrados(2, 4)
-print(f"La division de los cuadrados es: "{resultado}")
+if opcioningresada == 1:
+    numenteroingresado = int(input("Ingrese un número entero: "))
+    act1=funciones.num_entero_mayor_diez()
+    #return print(str(act1))
 
-res_100=funciones.division_de_cuadrados_x_100(2, 4)  # resultado x 100
-print(f"La división de los cuadrados multiplicados por 100 es: {res_100}")
+elif opcioningresada == 2:
+    primernum = int(input("Ingrese el primer número entero: "))
+    segundonum = int(input("Ingrese el segundo número entero: "))
+    tercernum = int(input("Ingrese el tercer número entero: "))
+
+    act2=funciones.suma_tres_numeros(num1=primernum, num2=segundonum, num3=tercernum)
+    #return print(str(act2))
+
+elif opcioningresada == 3:
+    numentero1 = int(input("Ingrese el primer número entero: "))
+    numentero2 = int(input("Ingrese el segundo número entero: "))
+
+    act3=funciones.division_de_cuadrados(num1=numentero1, num2=numentero2)
+    #return print(str(act3))
+
+elif opcioningresada == 4:
+    act4= funciones.que_temperatura_es_en_celcius()
+    #return print(str(f"{act4}°"))
 
 menu()
