@@ -1,4 +1,4 @@
-from ACTIVITY1- EX2 import funciones
+import funciones
 
 celcius=funciones.que_temperatura_es_en_celcius(32)  #función agarra 30, lo lleva a principal, hace el cálculo y vuelve el resultado acá
 print(f"La temperatura en celcius es:   {celcius}")
