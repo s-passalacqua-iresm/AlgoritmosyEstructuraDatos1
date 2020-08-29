@@ -31,4 +31,4 @@ def division_de_cuadrados(numEntero1 , numEntero2 ):
 def que_temperatura_es_en_celcius():
     farenheit=int(input("Ingrese la temperatura en Farenheit: "))
     celcius = int(5/9 * (farenheit - 32))
-    return celcius
+    return str(f"La temperatura en celcius es de: {celcius}°")

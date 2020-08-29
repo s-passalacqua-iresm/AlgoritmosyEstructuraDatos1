@@ -6,7 +6,7 @@ def menu ():
     print("1. Número entero mayor a diez")
     print("2. Suma de tres números ")
     print("3. División de cuadrados")
-    print("4. Convertir tempratura de Farenheit a Celcius")
+    print("4. Convertir temperatura de Farenheit a Celcius")
     print("----------------------------------------------------------------------------------")
     opIngresada = int(input("Ingrese la opción que desea realizar: "))
 
